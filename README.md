@@ -1,4 +1,4 @@
-# ![logo](LINE-sm.png) LINE Python
+# ![logo](LINE-sm.png) LINE Python3
 
 *LINE Messaging's private API*
 
