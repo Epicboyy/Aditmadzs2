@@ -191,7 +191,7 @@ def runtime(secs):
 def mentionMembers(to, mid):
     try:
         arrData = ""
-        textx = "總共標記「{}」位群組成員\n  [ Tag ]\n1. ".format(str(len(mid)))
+        textx = "總共標記{}位群組成員\n  [ 被標註成員 ]\n1. ".format(str(len(mid)))
         arr = []
         no = 1
         num = 2
@@ -218,7 +218,7 @@ def mentionMembers(to, mid):
 def siderMembers(to, mid):
     try:
         arrData = ""
-        textx = "和「{}」位群組成員互動\n安安 ".format(str(len(mid)))
+        textx = "發現{}位成員潛水\n粗乃聊天嘛(´･ω･`) ".format(str(len(mid)))
         arr = []
         no = 1
         num = 2
@@ -245,7 +245,7 @@ def siderMembers(to, mid):
 def welcomeMembers(to, mid):
     try:
         arrData = ""
-        textx = "Total Member Masuk「{}」\nHaii  ".format(str(len(mid)))
+        textx = "{}位萌新剛剛加入群組\n安安  ".format(str(len(mid)))
         arr = []
         no = 1
         num = 2
@@ -273,7 +273,7 @@ def welcomeMembers(to, mid):
 def leaveMembers(to, mid):
     try:
         arrData = ""
-        textx = "「{}」位成員突然失去了夢想\n要走的人留不住 再見囉(´･ω･`)  ".format(str(len(mid)))
+        textx = "{}位成員突然失去了夢想\n要走的人留不住 再見囉(´･ω･`)  ".format(str(len(mid)))
         arr = []
         no = 1
         num = 2
@@ -315,11 +315,11 @@ def sendMention(to, mid, firstmessage):
         hari = hari[:comma]
         teman = aditmadzs.getAllContactIds()
         gid = aditmadzs.getGroupIdsJoined()
-        tz = pytz.timezone("Asia/Jakarta")
+        tz = pytz.timezone("Asia/Taipei")
         timeNow = datetime.now(tz=tz)
         eltime = time.time() - mulai
         bot = runtime(eltime)
-        text += mention+"◐ Jam : "+datetime.strftime(timeNow,'%H:%M:%S')+" Wib\n🐚 Group : "+str(len(gid))+"\n🐚 Teman : "+str(len(teman))+"\n🐚 Expired : In "+hari+"\n🐚 Version : ARIFISTIFIK\n🐚 Tanggal : "+datetime.strftime(timeNow,'%Y-%m-%d')+"\n🐚 Runtime : \n • "+bot
+        text += mention+" 時間 : "+datetime.strftime(timeNow,'%H:%M:%S')+" Wib\n 群組 : "+str(len(gid))+"\n 好友 : "+str(len(teman))+"\n 到期日 : In "+hari+"\n 版本 : 莫言\n 日期 : "+datetime.strftime(timeNow,'%Y-%m-%d')+"\n 運行時間 : \n • "+bot
         aditmadzs.sendMessage(to, text, {'MENTION': str('{"MENTIONEES":' + json.dumps(arr) + '}')}, 0)
     except Exception as error:
         aditmadzs.sendMessage(to, "[ INFO ] Error :\n" + str(error))
@@ -336,48 +336,48 @@ def help():
     key = Setmain["keyCommand"]
     key = key.title()
     helpMessage = "╔══════════════════════════════╗" + "\n" + \
-                  "      ◄]·✪Aditmadzs✪·[►" + "\n" + \
+                  "      ◄]·✪莫言✪·[►" + "\n" + \
                   "╚══════════════════════════════╝" + "\n" + \
                   "╔══════════════════════════════╗" + "\n" + \
-                  "     ◄]·✪·Menu·✪·[►" + "\n" + \
+                  "     ◄]·✪·指令表·✪·[►" + "\n" + \
                   "╠══════════════════════════════╝" + "\n" + \
-                  "╠❂➣ " + key + "Help\n" + \
-                  "╠❂➣ " + key + "Help bot\n" + \
-                  "╠❂➣ " + key + "Translate\n" + \
+                  "╠❂➣ " + key + "Help 指令表\n" + \
+                  "╠❂➣ " + key + "Help bot 機器指令\n" + \
+                  "╠❂➣ " + key + "Translate 翻譯\n" + \
                   "╠❂➣ " + key + "Meme\n" + \
-                  "╠❂➣ " + key + "Me\n" + \
-                  "╠❂➣ " + key + "Mymid\n" + \
-                  "╠❂➣ " + key + "Mid「@」\n" + \
-                  "╠❂➣ " + key + "Info 「@」\n" + \
-                  "╠❂➣ " + key + "Kick1 「@」\n" + \
-                  "╠❂➣ " + key + "Mybot\n" + \
-                  "╠❂➣ " + key + "Status\n" + \
-                  "╠❂➣ " + key + "Status translate\n" + \
-                  "╠❂➣ " + key + "About\n" + \
-                  "╠❂➣ " + key + "Restart\n" + \
-                  "╠❂➣ " + key + "Runtime\n" + \
-                  "╠❂➣ " + key + "Creator\n" + \
-                  "╠❂➣ " + key + "Respon\n" + \
-                  "╠❂➣ " + key + "Speed/Sp\n" + \
-                  "╠❂➣ " + key + "Sprespon\n" + \
-                  "╠❂➣ " + key + "Tagall\n" + \
-                  "╠❂➣ " + key + "join dit\n" + \
-                  "╠❂➣ " + key + "Assist join\n" + \
-                  "╠❂➣ " + key + "Ginfo\n" + \
-                  "╠❂➣ " + key + "Open\n" + \
-                  "╠❂➣ " + key + "Close\n" + \
-                  "╠❂➣ " + key + "Url grup\n" + \
+                  "╠❂➣ " + key + "Me 丟出自己友資\n" + \
+                  "╠❂➣ " + key + "Mymid 丟出自己mid\n" + \
+                  "╠❂➣ " + key + "Mid「@」標註者mid\n" + \
+                  "╠❂➣ " + key + "Info 「@」標註者資訊\n" + \
+                  "╠❂➣ " + key + "Kick1 「@」標註踢出\n" + \
+                  "╠❂➣ " + key + "Mybot 丟出機器友資\n" + \
+                  "╠❂➣ " + key + "Status 查看狀態\n" + \
+                  "╠❂➣ " + key + "Status translate 查看翻譯\n" + \
+                  "╠❂➣ " + key + "About 關於\n" + \
+                  "╠❂➣ " + key + "Restart 機器重啟\n" + \
+                  "╠❂➣ " + key + "Runtime 運行時間\n" + \
+                  "╠❂➣ " + key + "Creator 作者\n" + \
+                  "╠❂➣ " + key + "Respon 報到\n" + \
+                  "╠❂➣ " + key + "Speed/Sp 測速\n" + \
+                  "╠❂➣ " + key + "Sprespon 測速回報\n" + \
+                  "╠❂➣ " + key + "Tagall 標註\n" + \
+                  "╠❂➣ " + key + "join dit 助手進群\n" + \
+                  "╠❂➣ " + key + "Assist join 助手進群\n" + \
+                  "╠❂➣ " + key + "Ginfo 群組資訊\n" + \
+                  "╠❂➣ " + key + "Open 開網址\n" + \
+                  "╠❂➣ " + key + "Close 關網址\n" + \
+                  "╠❂➣ " + key + "Url grup 群組網址\n" + \
                   "╠❂➣ " + key + "Reject\n" + \
-                  "╠❂➣ " + key + "Gruplist\n" + \
-                  "╠❂➣ " + key + "Infogrup「angka」\n" + \
-                  "╠❂➣ " + key + "Infomem「angka」\n" + \
-                  "╠❂➣ " + key + "Lurking「on/off」\n" + \
-                  "╠❂➣ " + key + "Lurkers\n" + \
-                  "╠❂➣ " + key + "Sider「on/off」\n" + \
-                  "╠❂➣ " + key + "Updatefoto\n" + \
-                  "╠❂➣ " + key + "Updategrup\n" + \
-                  "╠❂➣ " + key + "Updatebot\n" + \
-                  "╠❂➣ " + key + "Broadcast:「Text」\n" + \
+                  "╠❂➣ " + key + "Gruplist 群組清單\n" + \
+                  "╠❂➣ " + key + "Infogrup「數字」\n" + \
+                  "╠❂➣ " + key + "Infomem「數字」\n" + \
+                  "╠❂➣ " + key + "Lurking「on/off」 已讀開/關\n" + \
+                  "╠❂➣ " + key + "Lurkers 查看已讀\n" + \
+                  "╠❂➣ " + key + "Sider「on/off」抓潛水\n" + \
+                  "╠❂➣ " + key + "Updatefoto 更改頭像\n" + \
+                  "╠❂➣ " + key + "Updategrup 更改群圖\n" + \
+                  "╠❂➣ " + key + "Updatebot 更改頭像\n" + \
+                  "╠❂➣ " + key + "Broadcast:「文字」廣播\n" + \
                   "╠❂➣ " + key + "Setkey「New Key」\n" + \
                   "╠❂➣ " + key + "Mykey\n" + \
                   "╠❂➣ " + key + "Resetkey\n" + \
@@ -405,8 +405,8 @@ def help():
                   "╠══════════════════════════════╗" + "\n" + \
                   "     ◄]·✪·Protect·✪·[►" + "\n" + \
                   "╠══════════════════════════════╝" + "\n" + \
-                  "╠❂➣ " + key + "Notag「on/off」\n" + \
-                  "╠❂➣ " + key + "Allpro「on/off」\n" + \
+                  "╠❂➣ " + key + "Notag「on/off」禁止標註開/關\n" + \
+                  "╠❂➣ " + key + "Allpro「on/off」全部保護開/關\n" + \
                   "╠❂➣ " + key + "Protecturl「on/off」\n" + \
                   "╠❂➣ " + key + "Protectjoin「on/off」\n" + \
                   "╠❂➣ " + key + "Protectkick「on/off」\n" + \
