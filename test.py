@@ -399,7 +399,7 @@ def help():
                   "╠❂➣ " + key + "Spamtag「@」騷擾標註\n" + \
                   "╠❂➣ " + key + "Spamcall:「次數」\n" + \
                   "╠❂➣ " + key + "Spamcall 邀通\n" + \
-				  "╠❂➣ " + key + "Gift:「目標mid」「次數」\n" + \
+	          "╠❂➣ " + key + "Gift:「目標mid」「次數」\n" + \
                   "╠❂➣ " + key + "Spam:「目標mid」「次數」\n" + \	
                   "╠══════════════════════════════╗" + "\n" + \
                   "     ◄]·✪·保護指令·✪·[►" + "\n" + \
@@ -468,14 +468,14 @@ def helpbot():
                   "╠❂➣ " + key + "Bot2name:「姓名」\n" + \
                   "╠❂➣ " + key + "Bot1up「發送圖片」\n" + \
                   "╠❂➣ " + key + "Bot2up「發送圖片」\n" + \			  
-				  "╠❂➣ " + key + "Updatefoto\n" + \
+		  "╠❂➣ " + key + "Updatefoto\n" + \
                   "╠❂➣ " + key + "Updategrup 更改群圖\n" + \
                   "╠❂➣ " + key + "Updatebot\n" + \
                   "╠❂➣ " + key + "Broadcast:「文字」廣播\n" + \               
-				  "╠❂➣ " + key + "Self「on/off」半垢開/關\n" + \
-				  "╠❂➣ " + key + "Hapus chat 清理訊息\n" + \
+	          "╠❂➣ " + key + "Self「on/off」半垢開/關\n" + \
+	          "╠❂➣ " + key + "Hapus chat 清理訊息\n" + \
                   "╠❂➣ " + key + "Remove chat 清理訊息\n" + \
-				  "╠❂➣ " + key + "Leave:「群組名稱」離開該群\n" + \
+		  "╠❂➣ " + key + "Leave:「群組名稱」離開該群\n" + \
                   "╠══════════════════════════════╗" + "\n" + \
                   "     ◄]·✪·黑單·✪·[►" + "\n" + \
                   "╠══════════════════════════════╝" + "\n" + \
