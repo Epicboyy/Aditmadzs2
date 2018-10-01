@@ -444,8 +444,7 @@ def help():
                   "╠❂➣ " + key + "Refresh\n" + \
                   "╠❂➣ " + key + "Listbot\n" + \
                   "╠❂➣ " + key + "Listadmin\n" + \
-                  "╠❂➣ " + key + "Listprotect\n" + \
-                  "╠❂➣ Ketik「 Refresh 」Jika Sudah\n╠❂➣ Menggunakan Command Diatas...\n" + \
+                  "╠❂➣ " + key + "Listprotect\n" + \                 
                   "╠══════════════════════════════╗" + "\n" + \
                   "      ◄]·✪Aditmadzs✪·[►" + "\n" + \
                   "╠══════════════════════════════╝" + "\n" + \
@@ -485,21 +484,21 @@ def helpbot():
                   "╠❂➣ " + key + "Bot2up「Kirim fotonya」\n" + \
                   "╠❂➣ " + key + "Gift:「Mid korban」「Jumlah」\n" + \
                   "╠❂➣ " + key + "Spam:「Mid korban」「Jumlah」\n" + \
-				  "╠❂➣ " + key + "Spamtag:「jumlahnya」\n" + \
+		  "╠❂➣ " + key + "Spamtag:「jumlahnya」\n" + \
                   "╠❂➣ " + key + "Spamtag「@」\n" + \
                   "╠❂➣ " + key + "Spamcall:「jumlahnya」\n" + \
                   "╠❂➣ " + key + "Spamcall\n" + \
-				  "╠❂➣ " + key + "Updatefoto\n" + \
+	          "╠❂➣ " + key + "Updatefoto\n" + \
                   "╠❂➣ " + key + "Updategrup\n" + \
                   "╠❂➣ " + key + "Updatebot\n" + \
                   "╠❂➣ " + key + "Broadcast:「Text」\n" + \
                   "╠❂➣ " + key + "Setkey「New Key」\n" + \
                   "╠❂➣ " + key + "Mykey\n" + \
                   "╠❂➣ " + key + "Resetkey\n" + \
-				  "╠❂➣ " + key + "Self「on/off」\n" + \
-				  "╠❂➣ " + key + "Hapus chat\n" + \
+	          "╠❂➣ " + key + "Self「on/off」\n" + \
+		  "╠❂➣ " + key + "Hapus chat\n" + \
                   "╠❂➣ " + key + "Remove chat\n" + \
-				  "╠❂➣ " + key + "Leave:「Namagrup」\n" + \
+		  "╠❂➣ " + key + "Leave:「Namagrup」\n" + \
                   "╠══════════════════════════════╗" + "\n" + \
                   "     ◄]·✪·Blacklist·✪·[►" + "\n" + \
                   "╠══════════════════════════════╝" + "\n" + \
